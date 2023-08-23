@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./components/Card";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex justify-center items-center text-white gap-8">
+      <div className="grid grid-cols-4 gap-4">
+        <div className="row-span-2">
+          <Card />
+        </div>
+        <Card bgTop="bg-orange" />
+        <Card bgTop="bg-play" />
+        <Card bgTop="bg-study" />
+        <Card bgTop="bg-exercise" />
+        <Card bgTop="bg-social" />
+        <Card bgTop="bg-self" />
+      </div>
     </div>
   );
 }
